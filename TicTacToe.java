@@ -40,7 +40,7 @@ public class TicTacToe {
         HashSet<Integer> moves = new HashSet<Integer>();
 
         // Print out to the terminal the welcome message
-        System.out.println("TWelcome to Tic-Tac-Toe! Let's play! \n");
+        System.out.println("Welcome to Tic-Tac-Toe! Let's play! \n");
 
         // main game loop
         while (playing) {
