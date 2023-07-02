@@ -26,6 +26,7 @@ This program was developed using openJDK from Oracle and the extensions to integ
 
 - [Integrate Java into VS Code](https://code.visualstudio.com/docs/languages/java)
 - [W3 Schools](https://www.w3schools.com/java/)
+- [Educative Scanner.nextLine()](https://www.educative.io/answers/what-is-scannernextline-in-java)
 
 # Next Steps
 

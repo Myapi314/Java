@@ -1,6 +1,17 @@
+/**
+ * Class to handle board operations for TicTacToe.
+ * 
+ * @author Mya Scottorn
+ */
+
 public class Board {
+
     char[] board = { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 
+    /**
+     * Prints out the spaces of the board to look
+     * like a traditional tic-tac-toe board.
+     */
     public void displayBoard() {
         for (int i = 0; i < board.length; i++) {
             System.out.print(board[i]);
@@ -17,18 +28,35 @@ public class Board {
         }
     }
 
+    /**
+     * Updates the board with the player taking the spot of the
+     * number in the array.
+     * 
+     * @param spot   The spot to be updated
+     * @param player The player to replace the num char with.
+     */
     public void updateBoard(int spot, char player) {
         board[spot - 1] = player;
     }
 
+    /**
+     * Resets the board to be an array of chars from
+     * 1-9.
+     */
     public void resetBoard() {
         for (int i = 0; i < board.length; i++) {
             board[i] = (char) ('1' + i);
         }
     }
 
+    /**
+     * Checks the board for any of the specified win conditions.
+     * 
+     * @return Boolean true if a win condition has been met
+     */
     public boolean checkBoardForWin() {
         boolean winCondition = false;
+
         // Win conditions
         boolean[] winConditions = { (board[0] == board[4]) && (board[0] == board[8]), // right diagonal
                 (board[2] == board[4]) && (board[2] == board[6]), // left diagonal
